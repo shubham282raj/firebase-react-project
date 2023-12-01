@@ -3,29 +3,33 @@
   margin: 0px;
   padding: 0px;
 }
-
+body{
+  background-color: grey;
+}
 .App {
   text-align: center;
-  
 }
 
 .header{
   background-color: rgb(90, 67, 221);
-  height: 70px;
+  height: 100px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 40px 60px ;
+  font-size: 23px;
 }
 
 .header a {
+  display: inline-block;
   color: white;
   margin-right: 20px;
-  width: 100px;
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 2px solid white;
+  font-weight: bold;
+  transition: .7s;
 }
 
 
@@ -40,4 +44,41 @@
 }
 .header #userNavDisplayImg{
   border-radius: 15px;
+}
+
+.createPostContainer{
+  background-color: rgb(90, 67, 221);
+  width: 500px;
+  height: 70vh;
+  margin: auto;
+  margin-top: 10vh;
+  border-radius: 20px;
+}
+
+.createPostContainer #createPostTitleInput{
+  margin-top: 10%;
+  width: 50%;
+  font-size: 22px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.createPostContainer #createPostDescription{
+  font-size: 20px;
+  margin-top: 8%;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.createPostContainer #createPostSubmitButton{
+  margin-top: 5%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
 }
