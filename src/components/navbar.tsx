@@ -29,7 +29,7 @@ export const Navbar = () => {
               src={user?.photoURL || " "}
               height="30px"
             />
-            <button onClick={logOut}>Log Out</button>
+            <button id="navBarLogOut" onClick={logOut}>Log Out</button>
           </>
         )}
       </span>

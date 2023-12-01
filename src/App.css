@@ -4,16 +4,16 @@
   padding: 0px;
 }
 body{
-  background-color: grey;
+  background-color: #2D9596;
 }
 .App {
   text-align: center;
 }
 
 .header{
-  background-color: rgb(90, 67, 221);
+  background-color: #27374D;
   height: 100px;
-  color: white;
+  color: #ECF4D6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,7 @@ body{
 
 .header a {
   display: inline-block;
-  color: white;
+  color: inherit;
   margin-right: 20px;
   text-decoration: none;
   padding-bottom: 2px;
@@ -31,7 +31,6 @@ body{
   font-weight: bold;
   transition: .7s;
 }
-
 
 .header .userNavInfo{
   display: flex;
@@ -43,20 +42,38 @@ body{
   font-weight: bold;
 }
 .header #userNavDisplayImg{
+  margin: 0 10px;
   border-radius: 15px;
 }
 
+.header #navBarLogOut{
+  font-size: 16px;
+  background-color: #ECF4D6;
+  color: #265073;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header #navBarLogOut:hover{
+  cursor: pointer;
+}
+
 .createPostContainer{
-  background-color: rgb(90, 67, 221);
-  width: 500px;
-  height: 70vh;
+  background-color: #265073;
+  border: 3px solid #27374D;
+  width: 700px;
   margin: auto;
   margin-top: 10vh;
   border-radius: 20px;
+  color: #27374D;
 }
 
 .createPostContainer #createPostTitleInput{
-  margin-top: 10%;
+  color: inherit;
+  background-color: #9AD0C2;
+  margin-top: 60px;
   width: 50%;
   font-size: 22px;
   padding: 10px;
@@ -65,20 +82,72 @@ body{
 }
 
 .createPostContainer #createPostDescription{
+  color: inherit;
+  background-color: #9AD0C2;
   font-size: 20px;
-  margin-top: 8%;
+  margin-top: 20px;
   width: 50%;
-  height: 50%;
+  height: 300px;
   padding: 10px;
   border: none;
   border-radius: 8px;
 }
 
 .createPostContainer #createPostSubmitButton{
-  margin-top: 5%;
-  padding: 10px;
-  border: none;
+  background-color: #27374D;
+  border: 2px solid #9AD0C2;
+  color: #ECF4D6;
+  margin: 20px 0;
+  padding: 13px;
   border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
 }
+
+#postsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postContainer{
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 3px solid #27374D;
+  border-radius: 15px;
+  background-color: #265073;
+  color: #ECF4D6;
+}
+
+.postContainer .title{
+  margin: 30px 0px 20px 0px;
+  
+}
+
+.postContainer .title > h1{
+  display: inline-block;
+  border-bottom: 4px solid #2D9596;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+.postContainer .body {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.postContainer .author{
+  position: relative;
+  height: 50px;
+}
+.postContainer .author > p{
+  display: inline-block;
+  position: absolute;
+  left: 8%;
+  top: 15%;
+}
+
